@@ -2,21 +2,21 @@
 class GuessingGame {
     constructor() {}
     setRange(min, max) {
-
+        this.min = min;
+        this.max = max;
     }
-
     guess() {
-        var mid = (this.max - this.min);
-        console.log(this.mid);
-        return this.mid;
+        var mid = Math.ceil((this.max + this.min)/2);
+        this.mid = mid;
+        return(this.mid);
     }
 
     lower() {
-        this.min = this.mid;
+            this.max = this.mid;
     }
 
     greater() {
-        this.max = this.mid;
+            this.min = this.mid;
     }
 }
 
