@@ -6,16 +6,17 @@ class GuessingGame {
     }
 
     guess() {
-        var mid = (this.max - this.min)/2;
-        return (this.mid);
+        var mid = (max - min)/2;
+        console.log(mid);
+        return (mid);
     }
 
     lower() {
-        this.min = this.mid;
+        min = mid;
     }
 
     greater() {
-        this.max = this.mid;
+        max = mid;
     }
 }
 
